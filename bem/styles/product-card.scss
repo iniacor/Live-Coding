@@ -1,0 +1,88 @@
+.product-card {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  padding: 12.5px;
+  border-color: #f7f7f7;
+  border-style: solid;
+  border-width: 0 0 1px;
+  color: #666;
+  border-left-width: 1px;
+  z-index: 1;
+  @include for-large-up {
+    padding: 25px;
+  }
+
+  &__sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding: 4px 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    background-color: #006eff;
+    color: white;
+    z-index: 1;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    height: 235px;
+    margin: 0 0 55px 0;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    border: 0;
+  }
+
+  &__info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 12.5px;
+    @include for-large-up {
+      padding: 10px 12.5px 20px;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    font-weight: 700;
+    color: #030303;
+    white-space: normal;
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+    line-height: 1.375;
+  }
+
+  &__price {
+    font-size: 0.875em;
+    color: #737373;
+  }
+
+  &__regular-price {
+    text-decoration: line-through;
+    margin-right: 3px;
+  }
+
+  &__availability {
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    color: #006eff;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'vars.scss';
+@import 'global.scss';
+@import 'navigation.scss';
+@import 'navigation.scss';
+@import 'product-card.scss';
+@import 'products.scss';
+.main-content {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  @include for-large-up {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+.page-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  @include for-large-up {
+    padding: 0 20px;
+  }
+}

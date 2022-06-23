@@ -10,70 +10,266 @@
       integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Unica+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navigation" >
-      <h2 class="navigation__title">Jackets</h2>
-      <div class="navigation__container" >
-        <div class="navigation__filter">
-          <label class="navigation__label">FILTER BY</label>
-          <select class="navigation__select">
-            <option value="">All</option>
-            <option value="">2016</option>
-            <option value="">jackets</option>
-            <option value="">jackets</option>
-          </select>
-        </div>
-        <div class="navigation__sort">
-          <label class="navigation__label">SORT BY</label>
-          <select class="navigation__select">
-            <option value="">Featured</option>
-            <option value="">2016</option>
-            <option value="">jackets</option>
-            <option value="">jackets</option>
-          </select>
-        </div>
+    <main class="main-content">
+      <div class="page-container">
+        <nav class="navigation" >
+          <h1 class="navigation__title">Jackets</h1>
+          <div class="navigation__container" >
+            <div class="navigation__filter navigation__search">
+              <label class="navigation__label">FILTER BY</label>
+              <select class="navigation__select">
+                <option value="">All</option>
+                <option value="">2016</option>
+                <option value="">jackets</option>
+                <option value="">jackets</option>
+              </select>
+            </div>
+            <div class="navigation__sort navigation__search">
+              <label class="navigation__label">SORT BY</label>
+              <select class="navigation__select">
+                <option value="">Featured</option>
+                <option value="">2016</option>
+                <option value="">jackets</option>
+                <option value="">jackets</option>
+              </select>
+            </div>
+          </div>
+        </nav>
+        <section class="products">
+          <div class="product-card">
+            <a class="product-card__link "href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_305x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Haze Varsity</h5>
+                <div class="product-card__price">$132.96</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/10231100205_1_1315x1800_300_CMYK_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Greed Jacket</h5>
+                <div class="product-card__price">From $161</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/10197100950_1_1294x1800_300_RGB_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Restricted Pole Cat</h5>
+                <div class="product-card__price product-card__availability">SOLD OUT</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/EDYTJ00016_BTK0_FRT1_1800-2400_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">LA</h5>
+                <div class="product-card__price">$139.96</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/13068100389_1_1487x2100_300_RGB_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Campus</h5>
+                <div class="product-card__price">$132.96</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/13140100904_1_1522x2100_300_RGB_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Flint</h5>
+                <div class="product-card__price">$139.96</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/13142100261_1_1501x2100_300_RGB_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Frontier</h5>
+                <div class="product-card__price">$167.96</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <span class="product-card__sale">SALE</span>
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/3151-Juana-D-4263-753_1_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Juana</h5>
+                <div class="product-card__price"><span class="product-card__regular-price">$1,599</span>$959.40</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <span class="product-card__sale">SALE</span>
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/3166-GALA-D-4949-011_front_305x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Gala</h5>
+                <div class="product-card__price"><span class="product-card__regular-price">$1,999</span>$1,399.30</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <span class="product-card__sale">SALE</span>
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/3171-NICKY-D-4290-026_front_305x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Nicky</h5>
+                <div class="product-card__price"><span class="product-card__regular-price">$1,199</span>$899.25</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <span class="product-card__sale">SALE</span>
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/13079100631_1_521x720_72_RGB_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Sunset</h5>
+                <div class="product-card__price"><span class="product-card__regular-price">$209.95</span>$157.46</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/13067101241_1_525x720_72_RGB-2_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Dunmore</h5>
+                <div class="product-card__price">$229.95</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <span class="product-card__sale">SALE</span>
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/11003009_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Tuscany</h5>
+                <div class="product-card__price"><span class="product-card__regular-price">$259.50</span>$207.6</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/13065101971_1_553x720_72_RGB_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Covert</h5>
+                <div class="product-card__price">$189.95</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <span class="product-card__sale">SALE</span>
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/11013169_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Lexington</h5>
+                <div class="product-card__price"><span class="product-card__regular-price">$329.50</span>$263.60</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/13162101974_1_542x720_72_RGB-2_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Greenlight</h5>
+                <div class="product-card__price">$169.95</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/erjtj03019_andiejk_v_kvj0_frt1_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Andie</h5>
+                <div class="product-card__price">$199.95</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/11020_15071_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Victoria</h5>
+                <div class="product-card__price">$229.5</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/11023_15054_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Tuscany</h5>
+                <div class="product-card__price">$259.5</div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <div class="product-card__img-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/15021100133_1_505x720_72_RGB_250x.jpeg" alt="product card" class="product-card__img">
+              </div>
+              <div class="product-card__info">
+                <h5 class="product-card__name">Maverick</h5>
+                <div class="product-card__price">$199.95</div>
+              </div>
+            </a>
+          </div>
+        </section>
       </div>
-    </nav>
-    <section class="products">
-      <div class="product-card">
-        <span class="product-card__sale">SALE</span>
-        <div class="product-card__img-wrapper">
-          <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg" alt="product card" class="product-card__img">
-        </div>
-        <div class="product-card__info">
-          <h5 class="product-card__name">Haze Varsity</h5>
-          <h6 class="product-card__price">$132</h6>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-card__img-wrapper">
-          <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg" alt="product card" class="product-card__img">
-        </div>
-        <div class="product-card__info">
-          <h5 class="product-card__name">Haze Varsity</h5>
-          <h6 class="product-card__price">$132.96</h6>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-card__img-wrapper">
-          <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg" alt="product card" class="product-card__img">
-        </div>
-        <div class="product-card__info">
-          <h5 class="product-card__name">Haze Varsity</h5>
-          <h6 class="product-card__price">$132</h6>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-card__img-wrapper">
-          <img src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg" alt="product card" class="product-card__img">
-        </div>
-        <div class="product-card__info">
-          <h5 class="product-card__name">Haze Varsity</h5>
-          <h6 class="product-card__price">$132</h6>
-        </div>
-      </div>
-    </section>
+    </main>
   </body>
 </html>

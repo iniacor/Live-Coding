@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Karla, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.375;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 750px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navigation__title {
+  font-family: "Unica One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.875em;
+  color: #030303;
+  margin: 0 0 0.625em;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 750px) {
+  .navigation__title {
+    font-size: 2.25em;
+  }
+}
+.navigation__container {
+  display: flex;
+  width: 300px;
+}
+.navigation__search {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 750px) {
+  .navigation__search {
+    align-items: flex-start;
+  }
+}
+.navigation__label {
+  display: block;
+  text-align: center;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.navigation__select {
+  width: 150px;
+  height: 37px;
+  width: 100%;
+  border: 1px solid #dedede;
+  padding-top: 7;
+  padding-bottom: 7px;
+  padding-right: 28px;
+  padding-left: 7px;
+  line-height: 2.15;
+  appearance: none;
+  background-image: url(//cdn.shopify.com/s/files/1/0938/8938/t/18/assets/ico-select.svg?v=1245925112819775442);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-color: transparent;
+  text-indent: 0.01px;
+  text-overflow: "";
+  cursor: pointer;
+}
+@media screen and (min-width: 750px) {
+  .navigation__select {
+    background-color: transparent;
+    font-weight: 700;
+    border: none;
+    padding-left: 0;
+  }
+}
+.navigation__filter {
+  margin-right: 0;
+}
+@media screen and (min-width: 750px) {
+  .navigation__filter {
+    margin-right: 10px;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 750px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navigation__title {
+  font-family: "Unica One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.875em;
+  color: #030303;
+  margin: 0 0 0.625em;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 750px) {
+  .navigation__title {
+    font-size: 2.25em;
+  }
+}
+.navigation__container {
+  display: flex;
+  width: 300px;
+}
+.navigation__search {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 750px) {
+  .navigation__search {
+    align-items: flex-start;
+  }
+}
+.navigation__label {
+  display: block;
+  text-align: center;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.navigation__select {
+  width: 150px;
+  height: 37px;
+  width: 100%;
+  border: 1px solid #dedede;
+  padding-top: 7;
+  padding-bottom: 7px;
+  padding-right: 28px;
+  padding-left: 7px;
+  line-height: 2.15;
+  appearance: none;
+  background-image: url(//cdn.shopify.com/s/files/1/0938/8938/t/18/assets/ico-select.svg?v=1245925112819775442);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-color: transparent;
+  text-indent: 0.01px;
+  text-overflow: "";
+  cursor: pointer;
+}
+@media screen and (min-width: 750px) {
+  .navigation__select {
+    background-color: transparent;
+    font-weight: 700;
+    border: none;
+    padding-left: 0;
+  }
+}
+.navigation__filter {
+  margin-right: 0;
+}
+@media screen and (min-width: 750px) {
+  .navigation__filter {
+    margin-right: 10px;
+  }
+}
+
+.product-card {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  padding: 12.5px;
+  border-color: #f7f7f7;
+  border-style: solid;
+  border-width: 0 0 1px;
+  color: #666;
+  border-left-width: 1px;
+  z-index: 1;
+}
+@media screen and (min-width: 750px) {
+  .product-card {
+    padding: 25px;
+  }
+}
+.product-card__sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  background-color: #006eff;
+  color: white;
+  z-index: 1;
+}
+.product-card__img-wrapper {
+  position: relative;
+  height: 235px;
+  margin: 0 0 55px 0;
+}
+.product-card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border: 0;
+}
+.product-card__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 12.5px;
+}
+@media screen and (min-width: 750px) {
+  .product-card__info {
+    padding: 10px 12.5px 20px;
+  }
+}
+.product-card__name {
+  margin: 0;
+  font-weight: 700;
+  color: #030303;
+  white-space: normal;
+  font-size: 16px;
+  font-family: Karla, sans-serif;
+  line-height: 1.375;
+}
+.product-card__price {
+  font-size: 0.875em;
+  color: #737373;
+}
+.product-card__regular-price {
+  text-decoration: line-through;
+  margin-right: 3px;
+}
+.product-card__availability {
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  color: #006eff;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 750px) {
+  .products {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.main-content {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+@media screen and (min-width: 750px) {
+  .main-content {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+.page-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.page-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 750px) {
+  .page-container {
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

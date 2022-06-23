@@ -1,0 +1,7 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include for-large-up {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
