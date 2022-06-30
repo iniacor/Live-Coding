@@ -31,24 +31,22 @@
 function isPrime(number) {
   let isPrime = true;
   for (let index = 2; index < number; index += 1) {
-    number % index === 0 ? (isPrime = false) : (isPrime = true);
     if (number % index === 0) {
       isPrime = false;
     }
   }
-  if (isPrime) {
-    console.log(number);
-  }
+  return isPrime;
 }
 
 function getPrimes(num) {
   for (let number = 2; number <= num; number += 1) {
-    isPrime(number);
+    if (isPrime(number)) {
+      console.log(number);
+    }
   }
 }
-
 //--- testData
 
 getPrimes(15);
-getPrimes(7);
-getPrimes(-7);
+// getPrimes(7);
+// getPrimes(-7);
