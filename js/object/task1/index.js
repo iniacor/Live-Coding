@@ -1,7 +1,7 @@
 /* eslint-disable prefer-object-spread */
 /* eslint-disable no-param-reassign */
 
-'use strict';
+' use strict ';
 
 const transaction = {
   value: 170,

@@ -3,7 +3,7 @@
 // ger rid of duplicated code
 // don't use find
 
-//bad
+// bad
 //   balances.find((item, index) => clients.indexOf(client) === index);
 //   if (balances.find((item, index) => clients.indexOf(client) === index) < amount) {
 //     return -1;
@@ -30,7 +30,7 @@
 
 //   return -1;
 // };
-//GOOD
+// GOOD
 // const withdraw = (clients, balances, client, amount) => {
 //   const clientIndex = clients.indexOf(client);
 
@@ -48,7 +48,7 @@
 //   return newBalance > 0 ? newBalance : -1;
 // };
 
-//NORM
+// NORM
 // const withdraw = function (clients, balances, client, amount) {
 //   if (balances[clients.indexOf(client)] - amount < 0) {
 //     return -1;
