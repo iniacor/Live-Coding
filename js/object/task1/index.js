@@ -6,7 +6,6 @@
 const transaction = {
   value: 170,
 };
-
 // input obj,string,string
 // output  none
 function addPropertyV1(obj, key, value) {
