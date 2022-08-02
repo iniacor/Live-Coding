@@ -10,16 +10,16 @@
 // 1 get array of keys [key1,key2]
 // 2 iterate array keys- on every step create new obj
 // 3 sort array & return
-const customers = {
-  'customer-id-1': {
-    name: 'William',
-    age: 54,
-  },
-  'customer-id-2': {
-    name: 'Tom',
-    age: 17,
-  },
-};
+// const customers = {
+//   'customer-id-1': {
+//     name: 'William',
+//     age: 54,
+//   },
+//   'customer-id-2': {
+//     name: 'Tom',
+//     age: 17,
+//   },
+// };
 
 // const getCustomersList = obj => {
 //   return Object.values(obj)
@@ -34,12 +34,12 @@ const customers = {
 // console.log(getCustomersList(customers));
 
 // ============ refactoring ===========
-const getCustomersList = obj =>
-  Object.entries(obj)
-    .map(([id, customer]) => ({ id, ...customer }))
-    .sort((a, b) => (a.age > b.age ? 1 : -1));
+// const getCustomersList = obj =>
+//   Object.entries(obj)
+//     .map(([id, customer]) => ({ id, ...customer }))
+//     .sort((a, b) => (a.age > b.age ? 1 : -1));
 // test Data
-console.log(getCustomersList(customers));
+// console.log(getCustomersList(customers));
 
 // DRAFT SOLUTION
 // const getCustomersList = obj =>
@@ -161,3 +161,25 @@ console.log(getCustomersList(customers));
 //   const second = order.map(el => el[0]); // get the keys
 //   return first.map((el, index) => ({ ...el, id: second[index] })); // print the values and keys
 // };
+
+const customers = {
+  'customer-id-1': {
+    name: 'William',
+    age: 54,
+  },
+  'customer-id-2': {
+    name: 'Tom',
+    age: 17,
+  },
+};
+// algo
+// 1 get array of keys [key1,key2]
+// 2 iterate array keys- on every step create new obj
+// 3 sort array & return
+const getCustomersList = obj => Object.entries(obj).map(([id, customer]) => ({ id, ...customer }));
+
+// const getCustomersList = obj => {
+//   return Object.keys(obj).map(key => ({ id: key, ...obj[key] }));
+// };
+
+console.log(getCustomersList(customers));
